@@ -5,21 +5,21 @@ class Zv < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/weezy20/zv/releases/download/v0.3.0/zv-aarch64-apple-darwin.tar.gz"
-      sha256 "50db2d9424ca49dd32424f1271864e2d6838240ee460d7fa49ff14f04e391c62"
+      sha256 "3db49c75b49efe2144a7aa9d4de1e76fed408cc10dc95ba1bba071d8753b5ffc"
     end
     if Hardware::CPU.intel?
       url "https://github.com/weezy20/zv/releases/download/v0.3.0/zv-x86_64-apple-darwin.tar.gz"
-      sha256 "6d5c8983dcdcc7d2abaa43172f9a7f5f1516dee68da96c7b6d51eac765c06913"
+      sha256 "5ad119aeb5d05c8b66cd14c94cec5ba681d2843c35a537af4778f94e5da145a8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/weezy20/zv/releases/download/v0.3.0/zv-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3278e3c123b670badfa8c0f06fe15c9be8f07f49e0db214c1183f748f26e4162"
+      sha256 "57a2adc22244d1d17a254500e1d3686fe513d7090820277e45a0c0209111fc06"
     end
     if Hardware::CPU.intel?
       url "https://github.com/weezy20/zv/releases/download/v0.3.0/zv-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "cf83d0ec94c16073f28dfbb49c14199d02866f58985456305ab1b0a6e971d632"
+      sha256 "165860b13262a460a7068e923fbe6d28c72b217740e70d907b8a03e3ff35c87d"
     end
   end
   license "MIT"
