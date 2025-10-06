@@ -1,35 +1,37 @@
 class Zv < Formula
   desc "Ziglang Version Manager and Project Starter"
   homepage "https://github.com/weezy20/zv"
-  version "0.2.1"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/weezy20/zv/releases/download/v0.2.1/zv-aarch64-apple-darwin.tar.xz"
-      sha256 "2285b9d07a3250432bca7c51c3832d9d511626a0f330e81cca444ea60b685c8a"
+      url "https://github.com/weezy20/zv/releases/download/v0.3.0/zv-aarch64-apple-darwin.tar.gz"
+      sha256 "5d1d38a6b4c41635d0eab48ee7e3a9693d517e23520285075d5e5a6857c3f2ba"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/weezy20/zv/releases/download/v0.2.1/zv-x86_64-apple-darwin.tar.xz"
-      sha256 "06109bf14f7fa1fc56b12d1d3920a99a761786e12f6dc960086edc4fe44a55ba"
+      url "https://github.com/weezy20/zv/releases/download/v0.3.0/zv-x86_64-apple-darwin.tar.gz"
+      sha256 "e48620db099b148144d48bc97e309184eef144a1b4ce88ace51718e024bfc9b9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/weezy20/zv/releases/download/v0.2.1/zv-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "691c1d249f936af0cc37643cf6b51a4e5b267ac001084b19f512fb6049217aa9"
+      url "https://github.com/weezy20/zv/releases/download/v0.3.0/zv-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d9dc7ad511ee616705bcd0b31e174881c990843471f7c3cea37bf5ba249d96d1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/weezy20/zv/releases/download/v0.2.1/zv-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9fdf36de92f6eba82c42de42bc45abe1ef97e0521742bb51cfe52765b7ed834f"
+      url "https://github.com/weezy20/zv/releases/download/v0.3.0/zv-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5cfcde19fcd807fa53fc13f235f4317a5fafda0542703d88f8e0e5beea47f1c6"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
-    "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
-    "x86_64-unknown-linux-gnu":  {},
+    "aarch64-apple-darwin":              {},
+    "aarch64-unknown-linux-gnu":         {},
+    "x86_64-apple-darwin":               {},
+    "x86_64-pc-windows-gnu":             {},
+    "x86_64-unknown-linux-gnu":          {},
+    "x86_64-unknown-linux-musl-dynamic": {},
+    "x86_64-unknown-linux-musl-static":  {},
   }.freeze
 
   def target_triple
