@@ -1,25 +1,25 @@
 class Zv < Formula
   desc "Ziglang Version Manager and Project Starter"
   homepage "https://github.com/weezy20/zv"
-  version "0.6.0"
+  version "0.7.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/weezy20/zv/releases/download/v0.6.0/zv-aarch64-apple-darwin.tar.gz"
-      sha256 "9b8dcd2fa285d156d7c2f467b90e9438712859c97a976657760fa1902d5d7df2"
+      url "https://github.com/weezy20/zv/releases/download/v0.7.0/zv-aarch64-apple-darwin.tar.gz"
+      sha256 "c5e947ed01e517b78c689887c5ffb38a82af35b015be7c69894e65bd387bdad1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/weezy20/zv/releases/download/v0.6.0/zv-x86_64-apple-darwin.tar.gz"
-      sha256 "9d0711c1919d78d0abc297409a1785e05ba2abc7a8c8169275a5cf1f75d95641"
+      url "https://github.com/weezy20/zv/releases/download/v0.7.0/zv-x86_64-apple-darwin.tar.gz"
+      sha256 "12d2a9201fccb710f08fbefd7bceebb3a96e72058e0698c72de6096c12040c29"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/weezy20/zv/releases/download/v0.6.0/zv-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "50cf400d612a036dc61edf41cbd311746d1a15509560fedf7fac03cdf32684a4"
+      url "https://github.com/weezy20/zv/releases/download/v0.7.0/zv-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "eb8489d70f7ca66b1791893bfd380950bf26006f393790ee256b179f76787137"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/weezy20/zv/releases/download/v0.6.0/zv-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "43cfc559d4c6285d443688f6f9baf5729ff917ec42cbf1a32d6cb2458dadcd84"
+      url "https://github.com/weezy20/zv/releases/download/v0.7.0/zv-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ab6e2dc3a872b71c44547d638dfdfdc299a65b61e3cc55d81a2ee72154c3dea6"
     end
   end
   license "MIT"
