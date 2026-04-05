@@ -3,12 +3,12 @@ class Zv < Formula
   homepage "https://github.com/weezy20/zv"
   url "https://github.com/weezy20/zv/releases/download/v0.10.0/zv-x86_64-apple-darwin.tar.gz"
   version "0.10.0"
-  sha256 "496ebc7b2d742ba70abeea8a044b80476d5540c6ae18fdad317c78ee25d3af1c"
+  sha256 "5134bf9d575f5742e5a86e946253e593f359beb1a4f2691ffbf6e90b605fcf4d"
   license "MIT"
 
   on_arm do
     url "https://github.com/weezy20/zv/releases/download/v0.10.0/zv-aarch64-apple-darwin.tar.gz"
-    sha256 "8ec97da6c1bbed8f40e79900ed1746082639a7a8557f663b8371446ac8bf4e00"
+    sha256 "8085b8ce2bf1b2dee7ba7f32777ff9061dbea1be761a936c99cc6831896c62b1"
   end
 
   def install
