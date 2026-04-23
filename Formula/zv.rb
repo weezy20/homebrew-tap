@@ -1,14 +1,14 @@
 class Zv < Formula
   desc "Ziglang Version Manager and Project Starter"
   homepage "https://github.com/weezy20/zv"
-  url "https://github.com/weezy20/zv/releases/download/v0.11.1/zv-x86_64-apple-darwin.tar.gz"
-  version "0.11.1"
-  sha256 "934733e39304ff48373f49c729c015a6b3a6f42475983e9ea0fd83fed96e76ee"
+  url "https://github.com/weezy20/zv/releases/download/v0.12.0/zv-x86_64-apple-darwin.tar.gz"
+  version "0.12.0"
+  sha256 "bea538590abf04783e3559ccdd7df77d1ef20c4848baf5a409a3a79dec87e311"
   license "MIT"
 
   on_arm do
-    url "https://github.com/weezy20/zv/releases/download/v0.11.1/zv-aarch64-apple-darwin.tar.gz"
-    sha256 "6b02e9d2ee24a4cf714b7c33fc723e08b1f1d3b809ad6167e90cca71a39182ee"
+    url "https://github.com/weezy20/zv/releases/download/v0.12.0/zv-aarch64-apple-darwin.tar.gz"
+    sha256 "485e5522c2a9cc6527952cb3774d047f394af43e2156efea77e35bcf62e39064"
   end
 
   def install
